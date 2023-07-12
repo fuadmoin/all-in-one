@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   end
   root "users#splash_screen"
   resources :categories, only: %i[index show create] do
-    resources :items, only: %i[index show create]
+    resources :items, only: %i[index]
   end
-
+  resources :items, only: %i[ new create]
   get '/add_new_category', to: 'categories#new'
   get '/add_new_item', to: 'items#new'
 end

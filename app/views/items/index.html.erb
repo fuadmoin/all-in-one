@@ -1,2 +1,6 @@
 this is the index
+<%@items.each do |item| %>
+ <p>  <%=item.name%>  </p>
+ <p><%= item.amount * item.unit_price %></p>
+<% end %>
 <%= link_to 'New Item', add_new_item_path %>
