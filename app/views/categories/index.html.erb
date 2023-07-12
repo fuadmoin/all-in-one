@@ -1,0 +1,10 @@
+<% @categories.each do |category|%>
+    <%= link_to category_items_path(category) do %>
+    <img src=<%= category.icon %> alt="picture of the category">
+    <p><%= category.name %></p>
+    <p>price</p>
+  
+    <% end %>
+<% end %>
+
+<%= link_to 'Add Category', add_new_category_path%>

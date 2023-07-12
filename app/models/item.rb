@@ -3,7 +3,7 @@ class Item < ApplicationRecord
     validates :name, presence: true
     validates :price, numericality: {greater_than: 0}
     validates :amount, numericality: {greater_than: 0}
-    validates :must_have_at_least_one_category
+    validate :must_have_at_least_one_category
 
     private 
 

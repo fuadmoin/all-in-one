@@ -1,1 +1,7 @@
 this is the the splash screen.
+
+<%- if controller_name != 'sessions' %>
+  <%= link_to "Log in", new_user_session_path %><br />
+
+  <%= link_to "Sign up", new_user_registration_path %><br />
+<% end %>

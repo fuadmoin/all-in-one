@@ -4,4 +4,10 @@ Rails.application.routes.draw do
     get '/users/sign_out', to: 'devise/sessions#destroy'
   end
   root "users#splash_screen"
+  resources :categories, only: %i[index show create] do
+    resources :items, only: %i[index show create]
+  end
+
+  get '/add_new_category', to: 'categories#new'
+  get '/add_new_item', to: 'items#new'
 end
