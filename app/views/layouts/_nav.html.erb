@@ -1,0 +1,29 @@
+
+  <nav class=" navigation bg-blue flex items-center pl-5 ">
+    <% unless current_page?(categories_path) %>
+      <li class="block px-4 py-2 text-sm text-gray-700">
+        <%= link_to categories_path do %>
+          <iconify-icon icon="ep:back" style="color: white;"></iconify-icon>
+        <% end %>
+      </li>
+    <% end %>
+    <% if current_page?(categories_path) %>
+      <li class="block px-4 py-2 text-sm text-gray-700">
+        <iconify-icon icon="mingcute:menu-fill" style="color: white;"></iconify-icon>
+      </li>
+    <% end %>
+  
+   <li class="block px-4 py-2 text-md text-white pl-14">
+  <% if current_page?(categories_path) %>
+   <strong> Home Page </strong>
+  <% elsif current_page?(add_new_item_path) %>
+   <strong> Register Items </strong>
+  <% elsif current_page?(add_new_category_path) %>
+   <strong>  Register Categories </strong>
+  <% elsif current_page?(category_items_path) %>
+    <strong>Items</strong>
+  <% end %>
+</li>
+
+
+</nav>

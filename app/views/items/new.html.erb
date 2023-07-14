@@ -1,28 +1,23 @@
+<div class="items-container rounded-md bg-gray-100  p-3  shadow-sm ">
 <%= form_with(model: @item, local: true) do |form| %>
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  
+<%= form.text_field :name, placeholder: "Enter Item's name", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
+  
+  <%= form.number_field :amount, placeholder: "Enter Item's amount", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
 
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.number_field :amount %>
-  </div>
+<%= form.number_field :unit_price, placeholder: "Enter Item's unit price $", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
+  
 
-  <div class="field">
-    <%= form.label :unit_price %>
-    <%= form.number_field :unit_price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category_ids, "Categories" %><br>
+  <div class="mt-5 mb-5">
+    <%= form.label :category_ids, "Categories", class: "font-bold" %><br>
     <% Category.all.each do |category| %>
-      <%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category) %>
+      <%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category), class: "h-4 w-4 mr-2 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" %>
       <%= label_tag dom_id(category), category.name %><br>
     <% end %>
   </div>
 
-  <div class="actions">
+  <div class="border-solid border-black hover:bg-blue-400 group flex items-center rounded-md bg-green-500 text-white text-sm font-medium pl-28 pr-3 py-2 shadow-sm">
     <%= form.submit %>
   </div>
 <% end %>
+</div>

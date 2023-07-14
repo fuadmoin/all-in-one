@@ -1,42 +1,34 @@
-<h2>Sign up</h2>
+<div class="Login-container items-container rounded-md bg-gray-100  p-3  shadow-sm ">
+<h2 class="font-bold text-center mb-5">Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :fname %><br />
-    <%= f.text_field :fname, autofocus: true, autocomplete: "fname" %>
+    <%= f.text_field :fname, autofocus: true, autocomplete: "fname", placeholder: "First name", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
   <div class="field">
-    <%= f.label :mname %><br />
-    <%= f.text_field :mname, autofocus: true, autocomplete: "mname" %>
+    <%= f.text_field :mname, autofocus: true, autocomplete: "mname", placeholder: "Middle name", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
   <div class="field">
-    <%= f.label :lname %><br />
-    <%= f.text_field :lname, autofocus: true, autocomplete: "lname" %>
+    <%= f.text_field :lname, autofocus: true, autocomplete: "lname", placeholder: "Last name", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password (6 characters minimum)", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm password", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
   </div>
 
-  <div class="actions">
+  <div class="hover:bg-blue-400 flex items-center rounded-md bg-green-500 text-white text-sm font-medium pl-32 pr-3 py-2 shadow-sm mt-3 mb-5">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
