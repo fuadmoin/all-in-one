@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Item, type: :model do
-  let(:user) { User.create(fname: 'John', mname: 'Doe', lname: 'Smith', email: 'john@example.com', password: 'password') }
+  let(:user) do
+    User.create(fname: 'John', mname: 'Doe', lname: 'Smith', email: 'john@example.com', password: 'password')
+  end
   let(:category) { Category.create(name: 'Books', icon: 'book', user_id: user.id) }
 
   it 'is valid with valid attributes' do

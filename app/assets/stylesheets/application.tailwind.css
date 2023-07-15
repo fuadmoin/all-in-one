@@ -10,13 +10,11 @@
   }
 } */
 
-
-
 .items-container {
-   width: 20rem;
+  width: 20rem;
 }
 
-.all-in-one-label{
+.all-in-one-label {
   border: none;
   border-top: 1px  solid rgb(226, 221, 211) !important;
   border-bottom: 1px  solid rgb(226, 221, 211) !important;
@@ -29,28 +27,28 @@
   margin-top: -3rem !important;
 }
 
-.sign-up-container h1{
+.sign-up-container h1 {
   font-family: cursive;
 }
 
-.sign-up{
+.sign-up {
   text-align: center;
   margin-top: -23px;
 }
 
-.Login-container{
+.Login-container {
   height: 27rem !important;
   margin-top: -6rem !important;
 }
 
-.login{
+.login {
   margin-bottom: -1rem !important;
   width: 5rem;
   display: block !important;
 }
 
-.navigation{
- background-color: blue !important;
- width: 21rem !important;
- margin: 3px 0 0 1rem !important;
+.navigation {
+  background-color: blue !important;
+  width: 21rem !important;
+  margin: 3px 0 0 1rem !important;
 }

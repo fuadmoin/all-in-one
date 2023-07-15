@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-
   def index
     @categories = Category.all
   end
@@ -8,7 +7,7 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
-  def create 
+  def create
     @user = current_user
     @category = @user.categories.build(category_params)
     if @category.save
