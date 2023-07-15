@@ -1,8 +1,8 @@
 databases:
-  - name: recipe
+  - name: fuad
     ipAllowList: []
-    databaseName: recipe_e9w1
-    user: recipe_e9w1_user
+    databaseName: allinone_fugi
+    user: fuad
     plan: free
 
 services:
@@ -14,7 +14,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: recipe_e9w1
+          name: allinone_fugi
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
