@@ -1,7 +1,7 @@
 <div class="items-container rounded-md bg-gray-100  p-3  shadow-sm ">
 <%= form_for @category do |f| %>
-<%= f.text_field :name, placeholder: "Enter Category's name", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
-<%= f.text_field :icon, placeholder: "Enter Category's icon link", class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
+<%= f.text_field :name, placeholder: "Enter Category's name", required: true, class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
+<%= f.text_field :icon, placeholder: "Enter Category's icon link", required: true, class:"block all-in-one-label   round-md bg-transparent py-1.5 pl-1  sm:text-sm sm:leading-6 " %>
     <div class="mt-5 border-solid border-black hover:bg-blue-400 group flex items-center rounded-md bg-green-500 text-white text-sm font-medium pl-24 pr-3 py-2 shadow-sm">
   <%= f.submit 'Create Category' %>
 </div>

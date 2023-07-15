@@ -49,3 +49,26 @@
   width: 21rem !important;
   margin: 3px 0 0 1rem !important;
 }
+
+.alert {
+  padding: 3px;
+  background-color: #f44336;
+  color: white;
+  margin: 15px 0 15px 0;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
