@@ -22,9 +22,9 @@
 }
 
 .sign-up-container {
-  height: 25rem !important;
-  padding-top: 8rem !important;
-  margin-top: -3rem !important;
+  height: 37rem !important;
+  padding-top: 12rem !important;
+  margin-top: -1.5rem !important;
 }
 
 .sign-up-container h1 {
@@ -37,8 +37,7 @@
 }
 
 .Login-container {
-  height: 27rem !important;
-  margin-top: -6rem !important;
+  height: 37rem !important;
 }
 
 .login {

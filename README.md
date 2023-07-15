@@ -15,6 +15,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Video Presentation](#presentation)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -66,6 +67,10 @@
 - **Allows a user to add new items and categories**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Video Presentation <a name="presentation"></a>
+
+<a href="https://www.loom.com/share/efb4c27a5a0040af81f26c37b383531d">Watch video</a>
 
 ## 🚀 Live Demo <a name="live-demo"> </a>
 
