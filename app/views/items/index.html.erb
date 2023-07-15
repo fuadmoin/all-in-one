@@ -1,0 +1,11 @@
+<div class="items-container rounded-md bg-gray-100  p-3  shadow-sm ">
+<p class="font-bold mb-8 ml-44">Total: $<%= @category.items.sum { |fr| fr.unit_price * fr.amount }%></p>
+<%@items.each do |item| %>
+ <div class="hover:bg-blue-500 bg-white flex items-center mb-4 p-4 rounded-md shadow-sm h-16">
+ <p class="font-bold w-20" >  <%=item.name%>  </p>
+ <p class="ml-28 font-bold">$<%= item.amount * item.unit_price %></p>
+    </div>
+<% end %>
+<%= link_to 'New Item', add_new_item_path,  class: " border-solid border-black hover:bg-blue-400 group flex items-center rounded-md bg-green-500 text-white text-sm font-medium pl-28 pr-3 py-2 shadow-sm" %>
+
+</div>

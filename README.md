@@ -5,7 +5,7 @@
   <img src="./img/logo2.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Title</b></h3>
+  <h3><b>Allinone</b></h3>
 
 </div>
 
@@ -15,6 +15,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Video Presentation](#presentation)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -30,26 +31,50 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Math magicians <a name="about-project"></a>
+# 📖 All in one <a name="about-project"></a>
 
-**Math magicians** is a single page app that uses api for a basic calculator.
+**All in one** is a mobile web application where you can manage your budget: you have a list of items associated with a category, so that you can see how much money you spent and on what. You can register a user and add new items and categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- **HTML, CSS, React, and JavaScript**
+<details>
+  <summary>TailwindCSS</summary>
+  <ul>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Rails</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org">Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
-- **html styled with css and javascript**
-- **uses react**
+- **Keeps track of all your items and categories**
+- **Allows a user to register**
+- **Allows a user to add new items and categories**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Video Presentation <a name="presentation"></a>
+
+<a href="https://www.loom.com/share/efb4c27a5a0040af81f26c37b383531d">Watch video</a>
+
 ## 🚀 Live Demo <a name="live-demo"> </a>
 
-> Check out the live demo for this project [here.](https://fuadmoin.github.io/TODOLIST/dist/)
+> Check out the live demo for this project [here.](https://allinone-hz33.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,8 +99,8 @@ NodeJS (https://nodejs.org/en/)
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git https://github.com/fuadmoin/Math-magicians.git
+  cd All-in-one
+  git https://github.com/fuadmoin/all-in-one.git
 ```
 
 ### Install <a name="install"></a>
@@ -83,14 +108,13 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-npm install
+  bundle install
 ```
 
 ### Usage <a name="usage"></a>
 
 ```
-  code .
-  npm start
+  rails server
 ```
 
 ### Run tests <a name="run-tests"></a>
@@ -98,12 +122,12 @@ npm install
 To test, run the following command:
 
 ```sh
-npm test
+  rspec spec
 ```
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-You can deploy this project using Github-Page.
+You can deploy this project using Render.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,21 +137,21 @@ You can deploy this project using Github-Page.
 
 - GitHub: [@fuadmoin](https://github.com/fuadmoin)
 - Twitter: [@Fuad01804580](https://twitter.com/Fuad01804580)
-- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuad-moin-a7b126259/)
+- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuadmoin/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[HTML, CSS, and Javascript will be added]**
-- [ ] **[Api will be added]**
-- [ ] **[users will be able to use the calculator]**
+- [ ] **[Desktop version will be added]**
+- [ ] **[Editing items and categories will be added]**
+- [ ] **[Deleting an item or a category will be added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, [issues](https://github.com/fuadmoin/Math-magicians/issues), and feature requests are welcome!
+Contributions, [issues](https://github.com/fuadmoin/all-in-one/issues), and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +163,7 @@ If you like this project please consider starring it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://www.microverse.org/).
+I would like to thank Microverse for giving me this chance to work on this awesome project. Original design idea by[ Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

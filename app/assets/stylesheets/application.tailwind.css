@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+} */
+
+.items-container {
+  width: 20rem;
+}
+
+.all-in-one-label {
+  border: none;
+  border-top: 1px  solid rgb(226, 221, 211) !important;
+  border-bottom: 1px  solid rgb(226, 221, 211) !important;
+  width: 100%;
+}
+
+.sign-up-container {
+  height: 37rem !important;
+  padding-top: 12rem !important;
+  margin-top: -1.5rem !important;
+}
+
+.sign-up-container h1 {
+  font-family: cursive;
+}
+
+.sign-up {
+  text-align: center;
+  margin-top: -23px;
+}
+
+.Login-container {
+  height: 37rem !important;
+}
+
+.login {
+  margin-bottom: -1rem !important;
+  width: 5rem;
+  display: block !important;
+}
+
+.navigation {
+  background-color: blue !important;
+  width: 21rem !important;
+  margin: 3px 0 0 1rem !important;
+}
+
+.alert {
+  padding: 3px;
+  background-color: #f44336;
+  color: white;
+  margin: 15px 0 15px 0;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
