@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: all_in_one_production
-  username: all_in_one
-  password: <%= ENV["ALL_IN_ONE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>

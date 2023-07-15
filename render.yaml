@@ -1,0 +1,25 @@
+databases:
+  - name: recipe
+    ipAllowList: []
+    databaseName: recipe_e9w1
+    user: recipe_e9w1_user
+    plan: free
+
+services:
+  - type: web
+    name: recipes
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec rails"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: recipe_e9w1
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+  - type: redis
+    name: redis
+    ipAllowList: []
+    plan: free
+    maxmemoryPolicy: noeviction
